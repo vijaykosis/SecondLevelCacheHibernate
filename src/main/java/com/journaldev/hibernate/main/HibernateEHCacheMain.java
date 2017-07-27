@@ -39,11 +39,6 @@ public class HibernateEHCacheMain {
 		emp = (Employee) session.load(Employee.class, 1L);
 		printData(emp, stats, 3);
 		
-		emp = (Employee) session.load(Employee.class, 3L);
-		printData(emp, stats, 4);
-		
-		emp = (Employee) otherSession.load(Employee.class, 1L);
-		printData(emp, stats, 5);
 		
 		//Release resources
 		transaction.commit();
